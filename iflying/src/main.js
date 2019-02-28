@@ -7,9 +7,7 @@ import router from './router'
 import store from './store'
 import '@/common/css/reset.css'
 import '@/common/js/flexble.js'
-//import {Button} from 'mint-ui'
-import axios from "axios";
-Vue.prototype.$axios = axios;
+
 
 import { Button,Tabbar, TabItem,Search} from 'mint-ui'
 import '@/common/css/footer.scss';
