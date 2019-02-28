@@ -63,7 +63,6 @@
 </script>
 
 <style scoped>
-<<<<<<< HEAD
 	#footer{
         width: 100%;
         height: .98rem;
@@ -104,7 +103,6 @@
     #footer>ul>li>a:hover span{
     	color: #ff6600;
     }
-=======
 #tab-bar{
     width: 100%;
     height:1rem;
@@ -116,6 +114,6 @@
 }
 	
     
->>>>>>> wangdan
+
     
 </style>

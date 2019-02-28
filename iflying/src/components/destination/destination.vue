@@ -19,11 +19,6 @@
 </template>
 
 <script>
-<<<<<<< HEAD
-	export default {
-		
-	}
-=======
 import Vuex from 'vuex';
 import destLeft from '@/components/destination/components/dest_left'
 import destRight from '@/components/destination/components/dest_right'
@@ -47,7 +42,6 @@ export default{
 		destRight
 	}
 }
->>>>>>> wangdan
 </script>
 
 <style scoped lang="scss">
