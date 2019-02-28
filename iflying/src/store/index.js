@@ -1,6 +1,10 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import home from './home';
+<<<<<<< HEAD
+=======
+import destination from './destination'
+>>>>>>> wangdan
 Vue.use(Vuex);
 
 
@@ -17,6 +21,10 @@ const store = new Vuex.Store({
 	getters,
 	modules:{
 		home,
+<<<<<<< HEAD
+=======
+		destination
+>>>>>>> wangdan
 	}
 })
 
