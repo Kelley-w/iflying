@@ -32,7 +32,7 @@ export default (method,url,data=null)=>{
 	if(method == 'post'){
 		return http.post(url,data);  //就是axios.post方法  返回的是promise对象
 	}else if(method == 'get'){
-		return http.get(url);
+		return http.get(url,{params:data});
 	}else{
 		return;
 	}

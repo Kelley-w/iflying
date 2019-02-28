@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import home from './home'
+import home from './home';
+import destination from './destination'
 Vue.use(Vuex);
 
 
@@ -16,7 +17,8 @@ const store = new Vuex.Store({
 	mutations,
 	getters,
 	modules:{
-		home
+		home,
+		destination
 	}
 })
 

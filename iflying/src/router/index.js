@@ -17,6 +17,7 @@ export default new Router({
       path: '/home',
       name: 'home',
       component: Home
+//    conponent:(resolve)=>require("../components/home/home",resolve)
     },
     {
       path: '/destination',
