@@ -1,0 +1,16 @@
+.mint-tabbar.is-fixed{
+    height: 1rem;
+}
+.mint-tabbar > .mint-tab-item.is-selected{
+    color: #ff6600;
+    background: #fff;
+}
+.mint-tab-item-icon{
+    width: 0.5rem;
+    height: 0.5rem;
+    margin: 0 auto 0.05rem;
+}
+.mint-tab-item-label{
+    font-size: 24px;
+}
+
