@@ -5,7 +5,9 @@ import http from '../utils/http';
 //	http(method,url,params)
 //}
 //首页的轮播接口
+
 export const HomeDataSwiper=(params)=>http("get","/api/Public/GetAdList?posid=5aa2268db0ae1c9477023056&stationid=1&typeid=&randomnumber=0.44789286418879515&fystid=nb",params)  //返回一个promise对象
+
 //推荐产品接口
 export const HomeDataRecmmdContent=(params)=>http("get","/api/Public/GetProductRecmd?stationid=1&recmdid=5ab849d9b0ae1c6d4e02324c&ptypeid=&randomnumber=0.6954293577426613&fystid=nb",params)
 //首页小广告

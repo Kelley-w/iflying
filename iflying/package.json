@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "better-scroll": "^1.14.1",
+    "jsonwebtoken": "^8.5.0",
     "mint-ui": "^2.2.13",
     "node-sass": "^4.11.0",
     "qs": "^6.6.0",

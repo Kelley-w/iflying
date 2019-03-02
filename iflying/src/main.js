@@ -9,11 +9,12 @@ import '@/common/css/reset.css'
 import '@/common/js/flexble.js'
 
 
-import { Button,Tabbar, TabItem,Search} from 'mint-ui'
+import { Button,Tabbar, TabItem,Search,Field,MessageBox} from 'mint-ui'
 import '@/common/css/footer.scss';
-import '@/common/css/destination.scss'
+import '@/common/css/destination.scss';
+import '@/common/css/login.scss';
 
-
+Vue.component(Field.name, Field);
 Vue.component(Button.name, Button)
 Vue.component(Tabbar.name, Tabbar);
 Vue.component(TabItem.name, TabItem);

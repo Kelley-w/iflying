@@ -12,14 +12,9 @@
   "plugins": ["transform-vue-jsx", "transform-runtime",
       ["component", [
       {
-    "libraryName": "mint-ui",
-    "style": true
-  }
-]]]
-<<<<<<< HEAD
-}
-=======
-}
+	    "libraryName": "mint-ui",
+	    "style": true
+	  }
+	]]]
 
-
->>>>>>> wangdan
+}

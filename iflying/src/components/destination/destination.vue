@@ -25,17 +25,8 @@ import destRight from '@/components/destination/components/dest_right'
 export default{
 	data(){
 		return{
-			value:'123'
+			value:'123',
 		}
-	},
-	computed:{
-		
-	},
-	created(){
-		
-	},
-	methods:{
-		
 	},
 	components:{
 		destLeft,

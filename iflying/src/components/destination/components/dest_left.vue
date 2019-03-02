@@ -17,7 +17,7 @@ export default{
 			leftInfo:[
 				{
 					dataId:'hotDestina',
-					name:'热门1'
+					name:'热门'
 				},
 				{
 					dataId:'aroundMddData',
@@ -66,7 +66,8 @@ export default{
 	},
 	methods:{
 		handleAddress(list,index){
-			this.observer.$emit("handleAddressList",list)
+			this.observer.$emit("handleAddressHot",{index,list});
+//			this.observer.$emit("handleAddressList",list);
 			this.activeIndex = index;
 		}
 	}
