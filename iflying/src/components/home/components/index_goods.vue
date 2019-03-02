@@ -1,6 +1,6 @@
 <template>
 	<div class="loveProduct">
-		<section class="product-card" v-for="(item,index) in goodsList">
+		<section class="product-card" v-for="(item,index) in goodsList" :data-id="item.ProductID.$id" @click="handleToDetails(item.ProductID.$id)">
 			<div class="card-avatar">
 				<img :src="item.DefaultPic">
 			</div>
@@ -10,7 +10,7 @@
 				</div>
 				<div class="card-body">
 					<div>
-						<span class="price">{{item.MinPrice}}</span>起/人
+						<span class="price">￥{{item.MinPrice}}</span>起/人
 					</div>
 					<div>
 						03/20,04/16,04/28,05/10
@@ -37,6 +37,14 @@
 				goodsList:state=>state.home.goodsList,
 			})
 		},
+		methods:{
+			handleToDetails(id){
+				this.$router.push({
+					name:"details",
+       				query:{id:id}
+				})
+			}
+		}
 	}
 </script>
 

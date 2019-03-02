@@ -3,7 +3,8 @@
 		<section class="content">
 			<h1 class="title">推荐产品</h1>
 			<ul id="hotProduct">
-				<li v-for="(item,index) in contentProduct">
+				
+				<li v-for="(item,index) in contentProduct" @click="handleToDetails(item.ProductID.$id)" :data-id="item.ProductID.$id">
 					<div class="product-avatar"><img :src="item.DefaultPic"></div>
 					<div class="product-header one-line">{{item.WebTitle}}</div>
 					<div class="product-content">{{item.SubTitle}}</div>
@@ -13,25 +14,35 @@
 					</div>
 				</li>
 			</ul>
+			<Details></Details>
 		</section>
 	</div>
 </template>
 
 <script>
 	import Vuex from "vuex";
+
 	export default{
 		computed:{
 			...Vuex.mapState({
 				contentProduct:state=>state.home.contentProduct
 			})
-		}
+		},
+		methods:{
+			handleToDetails(id){
+				this.$router.push({
+					name:"details",
+       				query:{id:id}
+				})
+			}
+		},
 	}
 </script>
 
 <style scoped lang="scss">
 	.content{
 		width: 100%;
-		height: 4.4rem;
+		_height: 4.4rem;
 		margin-top: 0.3rem;
 		_margin-bottom: 2rem;
 		padding: 0.08rem;
@@ -45,9 +56,10 @@
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
+			flex-wrap: wrap;
 			width: 100%;
 			li{
-				width: 50%;
+				width: 46%;
 				height: 3.37rem;
 				img{
 					width: 3.45rem;

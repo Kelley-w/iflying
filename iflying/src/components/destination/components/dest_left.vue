@@ -17,7 +17,7 @@ export default{
 			leftInfo:[
 				{
 					dataId:'hotDestina',
-					name:'热门1'
+					name:'热门'
 				},
 				{
 					dataId:'aroundMddData',

@@ -36,7 +36,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.swiper-container {
 		width: 100%;
 	}

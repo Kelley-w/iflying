@@ -4,7 +4,9 @@ import Home from '@/components/home/home';
 import Destination from '@/components/destination/destination';
 import Plan from '@/components/plan/plan';
 import My from '@/components/my/my';
-
+import GroupTour from '@/components/home/groupTour/groupTour';
+//import Details from '@/components/home/details/details';
+import Details from '@/components/home/details/details';
 Vue.use(Router)
 
 export default new Router({
@@ -16,8 +18,8 @@ export default new Router({
     {
       path: '/home',
       name: 'home',
-      component: Home
-//    conponent:(resolve)=>require("../components/home/home",resolve)
+      component: Home,
+      
     },
     {
       path: '/destination',
@@ -33,6 +35,18 @@ export default new Router({
       path: '/my',
       name: 'my',
       component: My
+    },
+    //home中组团游的页面
+    {
+    	path:'/groupTour',
+    	name: 'groupTour',
+    	component:GroupTour	
+    },
+    {
+    	path:'/details',
+    	name: 'details',
+    	component:Details	
     }
-  ]
+    
+ ]
 })
