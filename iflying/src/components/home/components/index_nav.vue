@@ -2,10 +2,12 @@
 	<div id="index_nav">
 		<section class="nav" id="navTop">
 			<ul>
-				<li class="team">
-					<span>组团游</span><br>
-					<span class="small">跟着飞扬一起出发</span>
-				</li>
+				<router-link to="/groupTour">
+					<li class="team">
+						<span>组团游</span><br>
+						<span class="small">跟着飞扬一起出发</span>
+					</li>
+				</router-link>
 				<li class="ship right">邮轮游</li>
 				<li>自助游</li>
 				<li class="right">周末度假</li>
@@ -37,7 +39,7 @@
 		border-top-left-radius: 0.107rem;
 		border-top-right-radius: 0.107rem;
 		overflow: hidden;
-		background-image: url(../../../assets/tourBg.png), linear-gradient(to right, #fa5b57, #fb9b4e);
+		background-image: url(../../../assets/home-img/tourBg.png), linear-gradient(to right, #fa5b57, #fb9b4e);
 		background-repeat: no-repeat;
 		background-size: 100% auto;
 	}

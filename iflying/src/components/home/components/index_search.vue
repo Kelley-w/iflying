@@ -12,7 +12,7 @@
 				</span>
 			</div>
 			<div class="messageImg">
-				<img src="../../../assets/message.png"/>
+				<img src="../../../assets/home-img/message.png"/>
 			</div>
 		</div>
 	</div>
