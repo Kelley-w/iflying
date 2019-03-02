@@ -1,6 +1,7 @@
 //axios的二次封装
 import axios from 'axios';
 import qs from 'qs';
+import {getCookie} from './utils';
 
 const http = axios.create({
 	//baseURL:"xxx"
@@ -13,6 +14,14 @@ http.interceptors.request.use((config)=>{
 //	if(method === 'post'){
 //		config.data = qs.stringify(config.data)
 //	}
+	const token = getCookie("session");//获取cookie
+	config.data = JSON.stringify(config.data);
+	config.headers = {
+		'Content-Type':'application/x-www-form-urlencoded'//设置跨域头部
+	};
+	if(token){
+		config.params = {'token':token};
+	};
 	return config;
 },(err)=>{
 	return Promise.reject(err);

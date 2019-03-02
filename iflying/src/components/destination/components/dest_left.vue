@@ -66,7 +66,8 @@ export default{
 	},
 	methods:{
 		handleAddress(list,index){
-			this.observer.$emit("handleAddressList",list)
+			this.observer.$emit("handleAddressHot",{index,list});
+//			this.observer.$emit("handleAddressList",list);
 			this.activeIndex = index;
 		}
 	}

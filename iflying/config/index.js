@@ -22,9 +22,7 @@ module.exports = {
 //   "/apis":{
 //	     	target:"https://translate.googleapis.com/",
 //	     	changeOrigin:true,
-//	     	pathRewrite:{
-//	          "^/apis":""
-//	        }
+//	     
 //	     }
     },
 
