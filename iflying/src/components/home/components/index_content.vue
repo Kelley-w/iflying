@@ -14,7 +14,6 @@
 					</div>
 				</li>
 			</ul>
-			<Details></Details>
 		</section>
 	</div>
 </template>

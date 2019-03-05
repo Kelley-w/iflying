@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import home from './home';
-import destination from './destination'
 import destination from './destination';
 import my from './my';
 Vue.use(Vuex);

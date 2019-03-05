@@ -22,7 +22,7 @@ export default{
 	},
 	created(){
 		this.observer.$on("handleAddressHot",(params)=>{
-			console.log(params)
+			//console.log(params)
 			
 			if(params.index!=0){
 				this.com = 'addr';

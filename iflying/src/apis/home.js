@@ -36,3 +36,9 @@ export const GroupTourGoodsListArroundData=(params)=>http("get","/api/line/list?
 
 //商品详情的接口
 export const GoodsDetails=(params)=>http("get","/api/line/detail?ProductID="+params+"&MobileUserToken=d14482cb9b74f39fe589ecf3138a47767686d6e80a42a3e77794d393f674912ca2b60bfb&randomnumber=0.7382405351265917&fystid=nb")
+
+//目的地旅游详情接口
+export const DestinationDetails=(params)=>http("get","/api/line/list?Page=1&Size=10&Sort=3&DestinationID="+ params +"&randomnumber=0.5381830550341931&fystid=nb")
+
+//搜索的接口
+export const SearchResultData=(params)=>http("get","/api/line/list?Page=1&Size=10&Sort=3&DestinationID=&Key="+params+"&StringLike="+params+"&randomnumber=0.6455565493298336&fystid=nb")

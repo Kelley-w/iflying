@@ -9,11 +9,24 @@
 					</li>
 				</router-link>
 				<li class="ship right">邮轮游</li>
-				<li>自助游</li>
+				<router-link to="/freedomTour">
+					<li>自助游</li>
+				</router-link>
+				
 				<li class="right">周末度假</li>
-				<li>出境游</li>
-				<li>国内游</li>
-				<li class="right">周边游</li>
+				
+				<router-link to="/groupTour">
+					<li>出境游</li>
+				</router-link>
+				
+				<router-link to="/groupTour">
+					<li>国内游</li>
+				</router-link>
+				
+				<router-link to="/groupTour">
+					<li class="right">周边游</li>
+				</router-link>
+				
 			</ul>
 			<ul>
 				<li>签证</li>

@@ -7,7 +7,7 @@
 				</span>
 			</div>
 			<div class="title">
-				组团游
+				自助游
 			</div>
 			<div class="search" @click="handleToSearch">
 				<img src="../../../../assets/home-img/search.png"/>
@@ -41,9 +41,9 @@
 		justify-content: space-between;
 		align-items: center;
 		background: #ff7a3b;
-		position: fixed;
+		/*position: fixed;
 		top: 0;
-		z-index: 5;
+		z-index: 5;*/
 		padding: 0 0.2rem;
 		.back{
 			font-size: 0.38rem;

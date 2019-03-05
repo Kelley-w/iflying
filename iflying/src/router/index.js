@@ -2,16 +2,15 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/home/home';
 import Destination from '@/components/destination/destination';
-import DestDetails from '@/components/destination/components/dest_details';
 import Plan from '@/components/plan/plan';
 import My from '@/components/my/my';
 import GroupTour from '@/components/home/groupTour/groupTour';
 import Details from '@/components/home/details/details';
-import Login from '@/components/my/components/login'
-import Register from '@/components/my/components/register'
-
-
-
+import Login from '@/components/my/components/login';
+import Register from '@/components/my/components/register';
+import DestinationDetails from'@/components/home/destinationDetails/destinationDetails'
+import Search from "@/components/home/search/search"
+import FreedomTour from "@/components/home/freedomTour/freedomTour"
 
 Vue.use(Router)
 
@@ -48,6 +47,13 @@ export default new Router({
     	name: 'groupTour',
     	component:GroupTour	
     },
+    //home中自助游的页面
+    {
+    	path:"/freedomTour",
+    	name:"freedomTour",
+    	component:FreedomTour
+    },
+    //每个商品详情页面
     {
     	path:'/details',
     	name: 'details',
@@ -63,12 +69,17 @@ export default new Router({
     	name:'register',
     	component:Register
     },
+    //目的地一些商品列表
     {
-    	path:'/destDetails',
-    	name:'destDetails',
-    	component:DestDetails
-
+    	path:'/destinationDetails',
+    	name:'destinationDetails',
+    	component:DestinationDetails
+    },
+    //搜索页面
+    {
+    	path:'/search',
+    	name:'search',
+    	component:Search
     }
-    
  ]
 })
