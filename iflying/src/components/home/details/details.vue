@@ -28,7 +28,7 @@
 			} = this.$route.query;
 
 			let data = await GoodsDetails(id)
-			console.log(data.data)
+			//console.log(data.data)
 			this.goodsDetails = data.data
 		},
 		components: {

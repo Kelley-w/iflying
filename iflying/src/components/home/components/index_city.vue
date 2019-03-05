@@ -2,30 +2,57 @@
 	<div id="city">
 		<div class="geography-city">
 			<ul id="hotBourn">
-				<li>
-					<a>桂林</a>
+				
+				<li v-for="(item,index) in partCity" @click="handleClickDestination(item.id,item.city)">
+					<a>{{item.city}}</a>
 				</li>
-				<li>
-					<a>欧洲</a>
-				</li>
-				<li>
-					<a>日本</a>
-				</li>
-				<li>
-					<a>普吉岛</a>
-				</li>
-				<li>
-					<a>北京</a>
-				</li>
-				<li>
-					<a>更多目的地</a>
-				</li>
+				<router-link to="/destination">
+					<li>
+						<a>更多目的地</a>
+					</li>
+				</router-link>
 			</ul>
 		</div>
 	</div>
 </template>
 
 <script>
+	export default{
+		data(){
+			return{
+				partCity:[
+					{
+						id:"000000000000000000000579",
+						city:"桂林"
+					},
+					{
+						id:"000000000000000000000003",
+						city:"欧洲"
+					},
+					{
+						id:"000000000000000000000703",
+						city:"日本"
+					},
+					{
+						id:"000000000000000000003536",
+						city:"普吉岛"
+					},
+					{
+						id:"000000000000000000000008",
+						city:"北京"
+					}
+				]
+			}
+		},
+		methods:{
+			handleClickDestination(id,name){
+				this.$router.push({
+					name:"destinationDetails",
+					query:{id:id,key:name}
+				})
+			}
+		}
+	}
 </script>
 
 <style scoped lang="scss">

@@ -6,11 +6,19 @@ import Plan from '@/components/plan/plan';
 import My from '@/components/my/my';
 import GroupTour from '@/components/home/groupTour/groupTour';
 import Details from '@/components/home/details/details';
+<<<<<<< HEAD
 import Login from '@/components/my/components/login'
 import Register from '@/components/my/components/register'
 import store from '../store';
 import {getCookie,setCookie} from '@/utils/utils';
 
+=======
+import Login from '@/components/my/components/login';
+import Register from '@/components/my/components/register';
+import DestinationDetails from'@/components/home/destinationDetails/destinationDetails'
+import Search from "@/components/home/search/search"
+import FreedomTour from "@/components/home/freedomTour/freedomTour"
+>>>>>>> zhangyue
 
 Vue.use(Router)
 
@@ -65,6 +73,13 @@ const router = new Router({
 				Auth:false
 			}
     },
+    //home中自助游的页面
+    {
+    	path:"/freedomTour",
+    	name:"freedomTour",
+    	component:FreedomTour
+    },
+    //每个商品详情页面
     {
     	path:'/details',
     	name: 'details',
@@ -89,7 +104,22 @@ const router = new Router({
 				Auth:false
 			}
     },
+<<<<<<< HEAD
     
+=======
+    //目的地一些商品列表
+    {
+    	path:'/destinationDetails',
+    	name:'destinationDetails',
+    	component:DestinationDetails
+    },
+    //搜索页面
+    {
+    	path:'/search',
+    	name:'search',
+    	component:Search
+    }
+>>>>>>> zhangyue
  ]
 })
 

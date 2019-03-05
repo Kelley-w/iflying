@@ -6,7 +6,7 @@
 					宁波
 				</span>
 			</div>
-			<div class="search">
+			<div class="search" @click="handleToSearch()">
 				<span>
 					目的地/关键词
 				</span>
@@ -19,6 +19,15 @@
 </template>
 
 <script>
+	export default{
+		methods:{
+			handleToSearch(){
+				this.$router.push({
+					name:'search'
+				})
+			}
+		}
+	}
 </script>
 
 <style scoped>

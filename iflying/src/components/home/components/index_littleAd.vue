@@ -1,7 +1,7 @@
 <template>
 	<div id="index_littleAd">
 		<section class="promote">
-			<a href="##" v-for="(item,index) in littleAdImg">
+			<a v-for="(item,index) in littleAdImg" @click="handleClickDestination(index)">
 				<img :src="item.PicUrl">
 			</a>
 		</section>
@@ -11,10 +11,37 @@
 <script>
 	import Vuex from "vuex";
 	export default{
+		data(){
+			return{
+				destinationInfo:[],
+				destinationId:"",
+				destinationName:""
+			}
+		},
 		computed:{
 			...Vuex.mapState({
 				littleAdImg:state=>state.home.littleAdImg
 			})
+		},
+		created(){
+			this.handleDestinationInfo()
+		},
+		methods:{
+			handleDestinationInfo(){
+				for(var i = 0; i < this.littleAdImg.length; i++){
+					this.destinationInfo.push(this.littleAdImg[i].HttpUrl.split("?")[1])
+				}
+			},
+			handleClickDestination(index){
+				this.destinationId = this.destinationInfo[index].split('&')[0].split("=")[1];
+				this.destinationName = this.destinationInfo[index].split('&')[1].split("=")[1];
+				
+				this.$router.push({
+					name:'destinationDetails',
+					query:{id:this.destinationId,key:this.destinationName}
+				})
+				//console.log(this.destinationName);
+			}
 		}
 	}
 </script>
