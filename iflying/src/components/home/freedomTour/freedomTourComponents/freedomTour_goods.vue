@@ -78,7 +78,7 @@
 				}
 				.sati-peo{
 					position: absolute;
-				    bottom: 0.6rem;
+				    bottom: 0.3rem;
 				    left: 3.5rem;
 				    display: inline;
 				    color: #fff;
@@ -92,7 +92,16 @@
 					}
 				}
 				.product-extra{
-					
+					position: absolute;
+				    top: 0.267rem;
+				    left: 0.3rem;
+				    background: rgba(0, 0, 0, 0.7);
+				    color: #fff;
+				    height: 0.48rem;
+				    line-height: 0.48rem;
+				    font-size: 0.24rem;
+				    border-radius: 24px;
+				    padding: 0 0.3rem;
 				}
 			}
 		}
