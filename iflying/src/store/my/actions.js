@@ -6,6 +6,8 @@ export default{
 	//注册
 	async handleRegisters({commit},obj){
 		let {username,password} = obj;
+		console.log(obj);//{username: "13513267483", password: "123456"}
+		console.log(username)
 		let str;
 		if(!(/^1[34578]\d{9}$/.test(username))){ 
 	        return false; 
@@ -18,11 +20,7 @@ export default{
 	    		}else{
 				    var reg = /^([a-z0-9\.\@\!\#\$\%\^\&\*\(\)]){6,20}$/i
 			        if (reg.test(password)){
-//			        	let key = 'key'
-//			        	let token = jwb.sign({obj:obj},key,{expiresIn:'1h'});
-//			        	res.cookie("X-token",token);
-//			        	res.cookie("username",username);
-			          	let data = handleRegister(obj);
+			          	let data = handleRegister({"username":username,"password":password});
 			          	str = "注册成功";
 			          	break;
 			        }else{

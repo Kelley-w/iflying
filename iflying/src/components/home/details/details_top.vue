@@ -45,11 +45,12 @@
 	.detail-top {
 		background: #fff;
 		border-radius: 0.3rem 0.3rem 0 0;
-		margin: -0.42rem 0 0.4rem 0;
+		margin: -0.42rem 0 0 0;
 		position: relative;
 		z-index: 3;
 		padding: 0.15rem 0.21rem 0.24rem;
-		box-shadow: 0px -30px 59px black
+		box-shadow: 0px -30px 59px black;
+		border-bottom:0.4rem solid #e9e9e9;
 	}
 	
 	.detail-top .detail-title {

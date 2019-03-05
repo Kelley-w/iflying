@@ -45,7 +45,9 @@ export default{
 			str.then(function(rs){
 				if(rs == '注册成功'){
 					alert(rs);
-					location.href = "#/login";
+					this.$router.push({
+						name:"login"
+					});
 				}else{
 					alert(rs);
 				}
