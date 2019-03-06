@@ -1,7 +1,7 @@
 <template>
 	<div class="my_center">
 		<ul>
-			<li v-for="item in myStatusInfo">
+			<li v-for="(item,index) in myStatusInfo" @click="handleToPlan(index)">
 				<div class="imgBox">
 					<img :src="item.img" />
 				</div>
@@ -17,6 +17,15 @@ export default{
 	data(){
 		return{
 			
+		}
+	},
+	methods:{
+		handleToPlan(index){
+			if(index==2){
+				this.$router.push({
+					name:"plan"
+				})
+			}
 		}
 	}
 }

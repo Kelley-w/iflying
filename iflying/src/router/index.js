@@ -6,19 +6,15 @@ import Plan from '@/components/plan/plan';
 import My from '@/components/my/my';
 import GroupTour from '@/components/home/groupTour/groupTour';
 import Details from '@/components/home/details/details';
-<<<<<<< HEAD
+
 import Login from '@/components/my/components/login'
 import Register from '@/components/my/components/register'
 import store from '../store';
 import {getCookie,setCookie} from '@/utils/utils';
-
-=======
-import Login from '@/components/my/components/login';
-import Register from '@/components/my/components/register';
 import DestinationDetails from'@/components/home/destinationDetails/destinationDetails'
 import Search from "@/components/home/search/search"
 import FreedomTour from "@/components/home/freedomTour/freedomTour"
->>>>>>> zhangyue
+
 
 Vue.use(Router)
 
@@ -77,7 +73,10 @@ const router = new Router({
     {
     	path:"/freedomTour",
     	name:"freedomTour",
-    	component:FreedomTour
+    	component:FreedomTour,
+    	meta:{
+				Auth:false
+			}
     },
     //每个商品详情页面
     {
@@ -104,40 +103,44 @@ const router = new Router({
 				Auth:false
 			}
     },
-<<<<<<< HEAD
-    
-=======
     //目的地一些商品列表
     {
     	path:'/destinationDetails',
     	name:'destinationDetails',
-    	component:DestinationDetails
+    	component:DestinationDetails,
+    	meta:{
+				Auth:false
+			}
     },
     //搜索页面
     {
     	path:'/search',
     	name:'search',
-    	component:Search
+    	component:Search,
+    	meta:{
+				Auth:false
+			}
     }
->>>>>>> zhangyue
+
  ]
 })
 
 router.beforeEach((to,from,next)=>{
-	let flag = to.meta.Auth;
-	setCookie("state",flag);
-	next();
-//	if(to.meta.Auth){
-//		if(getCookie("X-token")){
-//			next();
-//		}else{
-//			next("/login",()=>{
-//				
-//			});
-//		}
-//	}else{
-//		next();
-//	}
+	const nextRoute = ['plan'];  //需要登录的页面
+	let isLogin = getCookie("username");   //根据本地是否存储用户名来判断是否登录，
+	if(nextRoute.indexOf(to.name)>=0){  //检测为需要登录的页面
+		if(!isLogin){ //如果未登录(本地存储无用户名)，跳到登录页面
+//			if(from.name === '')
+			router.push({
+				name:'login',
+				params:{redirect:to.fullPath}
+			})
+		}else{   //已登录状态，正常跳转
+			 next()
+			 return
+		}
+	}
+	next()
 })
 
 export default router;

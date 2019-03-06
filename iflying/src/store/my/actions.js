@@ -1,13 +1,12 @@
 import {handleRegister} from '@/apis/my';
 import {getRegisters} from '@/apis/my';
 //import jwt from 'jsonwebtoken';
-
+import axios from 'axios';
 export default{
 	//注册
 	async handleRegisters({commit},obj){
 		let {username,password} = obj;
-		console.log(obj);//{username: "13513267483", password: "123456"}
-		console.log(username)
+		
 		let str;
 		if(!(/^1[34578]\d{9}$/.test(username))){ 
 	        return false; 
@@ -20,7 +19,12 @@ export default{
 	    		}else{
 				    var reg = /^([a-z0-9\.\@\!\#\$\%\^\&\*\(\)]){6,20}$/i
 			        if (reg.test(password)){
-			          	let data = handleRegister({"username":username,"password":password});
+						axios({
+							method:"post",
+							url:"http://localhost:3000/data",
+							data:obj
+						}).then(()=>{})
+						
 			          	str = "注册成功";
 			          	break;
 			        }else{

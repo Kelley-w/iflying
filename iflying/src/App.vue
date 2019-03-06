@@ -2,7 +2,7 @@
   <div id="app">
     
     <router-view/>
-    <Footer v-if="flags"></Footer>
+    <Footer v-if="$route.meta.Auth"></Footer>
   </div>
 </template>
 
@@ -16,12 +16,7 @@ export default {
   },
   data(){
   	return{
-  		flags:true
   	}
-  },
-  updated(){
-  	let flag = getCookie("state");
-  	this.flags = flag;
   }
 }
 </script>

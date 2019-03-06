@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {handleHotOne,handleHotTwo,handleHotThree} from '@/apis/destination';
+import {handleHotOne,handleHotTwo,handleHotThree,handleHotDetails} from '@/apis/destination';
 export default{
 	//目的地主页数据
 	handleDestData({commit}){
@@ -22,5 +22,5 @@ export default{
 	async handleDestHotThree({commit}){
 		let data = await handleHotThree();
 		commit("handleDestHotOne",data.data);
-	}
+	},
 }

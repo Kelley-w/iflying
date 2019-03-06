@@ -4,7 +4,7 @@
 			<div class="dest_box" v-for="data in addressList.nb[addrId].mdd">
 				<p>{{data.Title}}</p>
 				<ul>
-					<li v-for="list in data.Childen">{{list.Title}}</li>
+					<li v-for="list in data.Childen" :dataId="list.ID" @click="handleAddress(list.Title)">{{list.Title}}</li>
 				</ul>
 			</div>
 		</div>
@@ -37,8 +37,16 @@ export default{
 	methods:{
 		...Vuex.mapActions({
 			handleDestData:"destination/handleDestData"
-		})
-		
+		}),
+		handleAddress(key){
+			this.$router.push({
+				name:'destinationDetails',
+				query:{
+//					id:id,
+					key:key
+				}
+			})
+		}
 	}
 }
 </script>

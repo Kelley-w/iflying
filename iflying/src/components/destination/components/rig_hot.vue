@@ -4,7 +4,7 @@
 			<div class="dest_box" v-for="(item,index) in addressHot">
 				<p class="hot">{{hotInfo[index]}}</p>
 				<ul class="hotlist">
-					<li v-for="list in item" :data-id="list.Notes">
+					<li v-for="list in item" :data-id="list.Notes" @click="handleHotDetails(list.Notes,list.Title)">
 						<div class="hotOne">
 							<div>
 								<img :src="list.PicUrl" />
@@ -34,15 +34,22 @@ export default{
 		this.handleDestHotOne();
 		this.handleDestHotTwo();
 		this.handleDestHotThree();
-//		console.log(this.addressHot)
 	},
 	methods:{
 		...Vuex.mapActions({
 			handleDestHotOne:"destination/handleDestHotOne",
 			handleDestHotTwo:"destination/handleDestHotTwo",
 			handleDestHotThree:"destination/handleDestHotThree",
-			
-		})
+		}),
+		handleHotDetails(id,key){
+			this.$router.push({
+				name:'destinationDetails',
+				query:{
+					id:id,
+					key:key
+				}
+			})
+		}
 		
 	}
 }

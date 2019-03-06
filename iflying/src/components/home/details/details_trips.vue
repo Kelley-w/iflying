@@ -101,6 +101,7 @@ export default{
 }
 .trips-arrange{
 	padding: 0.4rem;
+	margin-bottom: 1rem;
 	h3{
 		font-size:0.4rem;
 		text-align: center;
@@ -246,7 +247,9 @@ export default{
 	height:1rem;
 	border-top: 1px solid #999;
 	background: #fff;
-	margin-bottom: 2rem;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 	ul{
 		display: flex;
 		justify-content: space-around;

@@ -39,6 +39,7 @@ http.interceptors.response.use((res)=>{
 //导出一个函数，并判断请求接口的方式  http就是axios，axios返回promise API 
 export default (method,url,data=null)=>{
 	if(method == 'post'){
+		console.log(data)
 		return http.post(url,data);  //就是axios.post方法  返回的是promise对象
 	}else if(method == 'get'){
 		return http.get(url,{params:data});
