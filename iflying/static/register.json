@@ -29,18 +29,14 @@
       "username": "13423546790",
       "password": "123456",
       "id": 28
+    },
+    {
+      "username": "13519217865",
+      "password": "741852z",
+      "id": 29
     }
   ],
   "cart": [
-    {
-      "goodsId": "5aa87fd7bf04a4a95d8b464c",
-      "goodsName": "【满城尽带黄金甲】桑洲赏油菜花/岳林寺祈福/三里老街1日 复制",
-      "goodsImg": "http://img1.iflying.com/prd/201703/7/20170307142801674.png",
-      "goodsPrice": 99,
-      "goodsStartPlace": "宁波",
-      "goodsFlag": true,
-      "id": 1
-    },
     {
       "goodsId": "5b9b13d6bf04a477488b4681",
       "goodsName": "华运系列-深圳、香港、珠海、澳门、广州、桂林、韶山 夕阳红旅游专列11日游",
@@ -58,6 +54,51 @@
       "goodsStartPlace": "宁波",
       "goodsFlag": true,
       "id": 3
+    },
+    {
+      "goodsId": "5c774c8cbf04a49c018b45a0",
+      "goodsName": "【抖音fashion游】网红北京5日游",
+      "goodsImg": "http://img1.iflying.com/prd/201902/28/20190228104030428.jpg",
+      "goodsPrice": 3080,
+      "goodsStartPlace": "宁波",
+      "goodsFlag": true,
+      "id": 4
+    },
+    {
+      "goodsId": "58aab6ffbf04a4a60a8b45f1",
+      "goodsName": "【杭州直飞】巴厘岛（蓝梦岛+阿勇河漂流）5晚6日",
+      "goodsImg": "http://img1.iflying.com/prd/201812/5/20181205215326095.jpg",
+      "goodsPrice": 7399,
+      "goodsStartPlace": "杭州",
+      "goodsFlag": true,
+      "id": 5
+    },
+    {
+      "goodsId": "000000000000000000000787",
+      "goodsName": "普陀山祈福2日游",
+      "goodsImg": "http://img1.iflying.com/prd/201505/19/2242f79bd06de5ca66bfbf4239308e4ea6a6f114.jpg",
+      "goodsPrice": 538,
+      "goodsStartPlace": "中国",
+      "goodsFlag": true,
+      "id": 6
+    },
+    {
+      "goodsId": "58bcbf4ebf04a433508b45a0",
+      "goodsName": "【浪漫樱花季】日本本州温泉半自助7日游",
+      "goodsImg": "http://img1.iflying.com/prd/201705/10/20170510092758872.jpg",
+      "goodsPrice": 6999,
+      "goodsStartPlace": "宁波",
+      "goodsFlag": true,
+      "id": 7
+    },
+    {
+      "goodsId": "5bf7aa9abf04a488348b46b5",
+      "goodsName": "【纵贯线全景】澳大利亚大堡礁新西兰南北岛17日",
+      "goodsImg": "http://img1.iflying.com/prd/201811/27/20181127090431767.jpg",
+      "goodsPrice": 24800,
+      "goodsStartPlace": "宁波",
+      "goodsFlag": true,
+      "id": 8
     }
   ]
 }

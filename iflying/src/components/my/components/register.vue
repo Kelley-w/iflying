@@ -37,6 +37,7 @@ export default{
 	},
 	methods:{
 		handleRegister(){
+			const shelf = this;
 			let obj = {
 				username:this.username,
 				password:this.password
@@ -45,7 +46,7 @@ export default{
 			str.then(function(rs){
 				if(rs == '注册成功'){
 					alert(rs);
-					this.$router.push({
+					shelf.$router.push({
 						name:"login"
 					});
 				}else{
