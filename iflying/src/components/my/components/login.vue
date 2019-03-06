@@ -46,8 +46,8 @@ export default{
 				username:this.username,
 				password:this.password
 			};
-			let str = this.handleLogins(obj);
-			str.then((res)=>{
+			this.handleLogins(obj).then((res)=>{
+				console.log(res)
 				if(res == '登录成功'){
 					let key = 'key'
 			        let token = jwt.sign({obj:obj},key,{expiresIn:'1h'});

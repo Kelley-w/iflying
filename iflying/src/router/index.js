@@ -7,7 +7,7 @@ import My from '@/components/my/my';
 import GroupTour from '@/components/home/groupTour/groupTour';
 import Details from '@/components/home/details/details';
 
-import Login from '@/components/my/components/login'
+import Login from '@/components/my/components/login';
 import Register from '@/components/my/components/register'
 import store from '../store';
 import {getCookie,setCookie} from '@/utils/utils';
