@@ -36,5 +36,8 @@ export default {
 	},
 	handleGroupTourGoodsListArroundData(state,data){
 		state.productPlanListArround = data
+	},
+	handleGetFreedomGoodsData(state,data){
+		state.FreedomGoodsData = data
 	}
 }

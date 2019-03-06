@@ -6,19 +6,13 @@ import Plan from '@/components/plan/plan';
 import My from '@/components/my/my';
 import GroupTour from '@/components/home/groupTour/groupTour';
 import Details from '@/components/home/details/details';
-<<<<<<< HEAD
-import Login from '@/components/my/components/login'
-import Register from '@/components/my/components/register'
 import store from '../store';
 import {getCookie,setCookie} from '@/utils/utils';
-
-=======
 import Login from '@/components/my/components/login';
 import Register from '@/components/my/components/register';
 import DestinationDetails from'@/components/home/destinationDetails/destinationDetails'
 import Search from "@/components/home/search/search"
 import FreedomTour from "@/components/home/freedomTour/freedomTour"
->>>>>>> zhangyue
 
 Vue.use(Router)
 
@@ -104,9 +98,6 @@ const router = new Router({
 				Auth:false
 			}
     },
-<<<<<<< HEAD
-    
-=======
     //目的地一些商品列表
     {
     	path:'/destinationDetails',
@@ -119,7 +110,7 @@ const router = new Router({
     	name:'search',
     	component:Search
     }
->>>>>>> zhangyue
+
  ]
 })
 

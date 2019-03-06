@@ -1,5 +1,5 @@
 <template>
-	<div class="groupTour_search">
+	<div class="plan_header">
 		<div class="header">
 			<div class="back" @click="handleBack">
 				<span>
@@ -7,10 +7,10 @@
 				</span>
 			</div>
 			<div class="title">
-				自助游
+				我的出游计划
 			</div>
 			<div class="search" @click="handleToSearch">
-				<img src="../../../../assets/home-img/search.png"/>
+				<img src="../../../assets/home-img/search.png"/>
 			</div>
 		</div>
 	</div>

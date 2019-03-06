@@ -30,9 +30,14 @@
 			this.destinationName = key
 			//console.log(this.destinationName)
 			//console.log(key)
-			console.log(data.data)
-			console.log(searchData)
-			this.destinationDetails = searchData.data || data.data
+			//console.log(data.data)
+			//console.log(searchData)
+			if(data.data){
+				this.destinationDetails = data.data
+			}else{
+				
+				this.destinationDetails = searchData.data
+			}
 		},
 		components:{
 			"DestinationDetails_header":DestinationDetails_header,

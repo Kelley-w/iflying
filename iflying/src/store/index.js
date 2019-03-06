@@ -1,12 +1,9 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import home from './home';
-<<<<<<< HEAD
-import destination from './destination'
-=======
 import destination from './destination';
->>>>>>> zhangyue
 import my from './my';
+import plan from './plan';
 Vue.use(Vuex);
 
 
@@ -24,7 +21,8 @@ const store = new Vuex.Store({
 	modules:{
 		home,
 		destination,
-		my
+		my,
+		plan
 	}
 })
 
