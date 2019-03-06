@@ -5,7 +5,7 @@
 				<div class="searchImg">
 					<img src="../../assets/destination/search.png" />
 				</div>
-				<span>搜索目的地，关键词</span>
+				<span @click="handleToSearch">搜索目的地，关键词</span>
 			</div>
 			<div class="dest_content">
 				<img src="../../assets/my/myinfo.jpg" />
@@ -31,6 +31,13 @@ export default{
 	components:{
 		destLeft,
 		destRight
+	},
+	methods:{
+		handleToSearch(){
+			this.$router.push({
+				name:"search"
+			})
+		}
 	}
 }
 </script>

@@ -10,6 +10,7 @@ import {GroupTourGoodsListData} from "@/apis/home";
 import {GroupTourGoodsListAbroadData} from "@/apis/home";
 import {GroupTourGoodsListDomesticData} from "@/apis/home";
 import {GroupTourGoodsListArroundData} from "@/apis/home";
+import {GetFreedomGoodsData} from "@/apis/home";
 export default{
 	//首页轮播的数据
 	async handleHomeDataSwiper({commit}){
@@ -82,5 +83,11 @@ export default{
 		let data = await GroupTourGoodsListArroundData();
 		//console.log(data.data);
 		commit("handleGroupTourGoodsListArroundData",data.data.LineList)
-	}
+	},
+	//首页自助游的数据
+	async handleGetFreedomGoodsData({commit}){
+		let data = await GetFreedomGoodsData();
+		//console.log(data.data);
+		commit("handleGetFreedomGoodsData",data.data.LineList)
+	},
 }

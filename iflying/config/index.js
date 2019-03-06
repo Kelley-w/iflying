@@ -18,12 +18,12 @@ module.exports = {
         pathRewrite:{
           "^/api":""
         }
-     },
+     	},
 //   "/apis":{
-//	     	target:"https://translate.googleapis.com/",
+//	     	target:"http://localhost:3000/",
 //	     	changeOrigin:true,
 //	     
-//	     }
+//	    }
     },
 
     // Various Dev Server settings

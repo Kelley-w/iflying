@@ -20,7 +20,7 @@ export default{
 	productPlanListDomestic:[],
 	//出境跟团商品列表数据
 	productPlanListArround:[],
-	
-	//商品的详情数据
+	//首页自助游的数据
+	FreedomGoodsData:[]
 	
 }

@@ -1,0 +1,22 @@
+{
+  "cart": [
+    {
+      "goodsId": "5aa87fd7bf04a4a95d8b464c",
+      "goodsName": "【满城尽带黄金甲】桑洲赏油菜花/岳林寺祈福/三里老街1日 复制",
+      "goodsImg": "http://img1.iflying.com/prd/201703/7/20170307142801674.png",
+      "goodsPrice": 99,
+      "goodsStartPlace": "宁波",
+      "goodsFlag": true,
+      "id": 1
+    },
+    {
+      "goodsId": "5b9b13d6bf04a477488b4681",
+      "goodsName": "华运系列-深圳、香港、珠海、澳门、广州、桂林、韶山 夕阳红旅游专列11日游",
+      "goodsImg": "http://img1.iflying.com/prd/201809/6/20180906165117723.jpg",
+      "goodsPrice": 2240,
+      "goodsStartPlace": "宁波",
+      "goodsFlag": true,
+      "id": 2
+    }
+  ]
+}
